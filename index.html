@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="weather.png">
     <script src="./script.js" defer></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
@@ -21,15 +22,16 @@
     <div class="container-model">
   <div class="card">
     <div class="search">
-      <input type="text" class="search-bar" placeholder="Search">
+      <input type="text" class="search-bar" placeholder="CITY">
       <button>search</button>
     </div>
     <div class="weather loading">
       <h1 class="city">Weather in </h1>
       <div class="temp">Temperature : </div>
-      <!-- <div class="flex"> -->
-        <!-- <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" /> -->
-      <div class="description">Description : </div>
+      <div class="flex">
+        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+        <div class="description">Description :</div>
+    </div>
       <div class="humidity">Humidity : </div>
       <div class="wind">Wind speed : </div>
     </div>
@@ -37,7 +39,4 @@
 </div>
 </div>
 </body>
-
 </html>
-
-<!-- id="search-button" -->
