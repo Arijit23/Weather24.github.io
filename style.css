@@ -108,6 +108,20 @@ body {
      text-transform: capitalize;
      margin-left: 8px;
   }
+
+  .location-not-found {
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .location-not-found h1 {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+  }
   
   .weather.loading {
     visibility: hidden;

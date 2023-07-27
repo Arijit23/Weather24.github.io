@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="weather.png">
-    <script src="./script.js" defer></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="weather.png">
+  <script src="./script.js" defer></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 <body>
@@ -20,23 +20,29 @@
       <div class="header">Weather24</div>
     </div>
     <div class="container-model">
-  <div class="card">
-    <div class="search">
-      <input type="text" class="search-bar" placeholder="CITY">
-      <button>search</button>
-    </div>
-    <div class="weather loading">
-      <h1 class="city">Weather in </h1>
-      <div class="temp">Temperature : </div>
-      <div class="flex">
-        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-        <div class="description">Description :</div>
-    </div>
-      <div class="humidity">Humidity : </div>
-      <div class="wind">Wind speed : </div>
+      <div class="card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="CITY">
+          <button>Search</button>
+        </div>
+        <div class="location-not-found">
+          <h1>Sorry, Location not found!!!</h1>
+        </div>
+        <div class="weather loading">
+          <h1 class="city">Weather in </h1>
+          <div id="time">Current time : </div>
+          <div class="temp">Temperature : </div>
+          <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+            <div class="description">Description :</div>
+        </div>
+          <div class="humidity">Humidity : </div>
+          <div class="pressure">Pressure :</div>
+          <div class="visibility">visibility :</div>
+          <div class="wind">Wind speed : </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </body>
 </html>
